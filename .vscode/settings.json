@@ -51,6 +51,6 @@
     "temp/": true,
     "Temp/": true
   },
-  "dotnet.defaultSolution": "Bouncing Up.sln",
-  "workbench.colorTheme": "Dracula At Night"
+  "dotnet.defaultSolution": "Bouncing-Up.sln",
+  "workbench.colorTheme": "eppz!"
 }

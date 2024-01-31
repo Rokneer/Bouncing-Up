@@ -10,9 +10,11 @@ public class HookeLaw : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
             ApplyRestorativeForce(collision.gameObject);
     }
+
     private void ApplyRestorativeForce(GameObject fallingObject)
     {
-        if (!fallingObject.TryGetComponent<Rigidbody>(out Rigidbody rb)) return;
+        if (!fallingObject.TryGetComponent<Rigidbody>(out Rigidbody rb))
+            return;
 
         // Calculate relative position
         float relativePos = fallingObject.transform.position.y - transform.position.y;
